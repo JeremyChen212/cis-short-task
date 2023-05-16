@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="position-relative pb-4">
+    <!-- <img src="/lightblue.jpg" class="z-1 position-absolute top-0 left-0" id="blueimg" alt="blueimg"> -->
+    <!-- <img src="/lightgold.jpg" id="goldimg" alt="goldimg"> -->
+    <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" id="sidebarOpenButton" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
+      <span class="sr-only">Open sidebar</span>
+      <input type="checkbox" value="" class="sr-only peer">
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+         <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+      </svg>
+   </button>
+<aside id="sidebar-multi-level-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full lg:translate-x-0" aria-label="Sidebar">
+    <div class="h-full px-3 py-4 overflow-y-auto bg-white border">
+       <ul class="space-y-2 font-medium">
+          <li>
+             <a href="./overviews.html" class="active flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
+                <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+                <span class="ml-3 hover:text-black">Overview</span>
+             </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center p-2 rounded-lg bg-gray-100">
+               <svg aria-hidden="true" class="w-6 h-6 text-gray-800 transition duration-75" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+               <span class="ml-3 text-black">Table Comparison</span>
+            </a>
+         </li>
+         <li>
+          <a href="./references.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
+             <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path></svg>
+             <span class="ml-3 text-black">References</span>
+          </a>
+       </li>
+       </ul>
+    </div>
+ </aside>
+ <div id="overlay" class="z-20 hidden w-full h-full bg-black absolute top-0 left-0"></div>
+    <main id="main" class="lg:ml-64 p-3">
+        <table class="table z-10 lg:table-fixed table-fixed w-full table-bordered">
+          <thead class="sticky top-0">
+            <tr id="toprow">
+              <th scope="col"></th>
+              <th scope="col">React Native</th>
+              <th scope="col">Flutter</th>
+              <th scope="col">Phone Gap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Apps made with this framework</th>
+              <td>Instagram </br> Netflix </br> Amazon </br> Uber </br> Shopify </br> Pinterest</td>
+              <td>Google Ads </br> BMW </br> Ebay </br> Alibaba </br> Groupon</td>
+              <td>DHS Program </br> Wikipedia</td>
+            </tr>
+            <tr>
+              <th scope="row">Programming Language</th>
+              <td>
+                JavaScript <br><br> 
+                <li>
+                    Most widely-used language
+                </li>  
+                <li>
+                    Used for back-end & front-end.
+                </li> 
+                <li>
+                    Offers the advantage of a large developer community and extensive libraries. 
+                </li> 
+                <li>
+                    Dynamic and loosely typed language, making it easier to write code quickly.
+                </li> 
+              </td>
+              <td>C/C++ & Dart<br><br>
+                <li>
+                    Strongly type language (object-oriented), which helps to catch errors before runtime.
+                </li> 
+                <li>
+                  Has great IDE (integrated development environment) support which will increase developer productivity
+                </li>
+                <li>
+                  Includes powerful autocompletion features & hot-reload for fast development cycles.
+                </li> 
+               </td>
+              <td>CSS, JavaScript, or HTML</td>
+            </tr>
+            <tr>
+              <th scope="row">UI Development</th>
+              <td> <i class="w-fit h-fit rounded-full">Native & Custom Components</i> <br> <br> Offers an extensive collection of external UI kits, with both pre-made and customizable components. Also allows for platform-specific UI customization.</td>
+              <td>Custom <br> <br> Widget-based architecture that offers a wide set of pre-designed and customizable widgets.</td>
+              <td>Custom <br><br>Builds and renders UI using web technologies, resulting in cross-platform compatibility but potentially limited native-like UI.</td>
+            <tr>
+              <th scope="row">Execution Speed</th>
+              <td>GOOD <br><br> React Native relies on JavaScript bridge for communication with native components, which makes performance a bit slower.</td>
+              <td>EXCELLENT <br><br> Flutter is known for its high performance with its native-like performance and faster execution speed..</td>
+              <td>AVERAGE <br><br> PhoneGap uses WebView and other web technologies, resulting in a slower native rendering.</td>
+            </tr>
+            <tr>
+              <th scope="row">App Size</th>
+              <td>MODERATE. <br><br> React Native has a moderate file size, though size can increase depending on number of dependencies used.</td>
+              <td>LARGE <br><br> Flutter tends to have a larger starting file size compared to the other two. NOTE: It also comes with an "ahead-of-time" compiler that allows developers to ship only the codebase needed for the app they are building without having to bundle anything with it.</td>
+              <td>SMALL <br><br> Smaller size as they rely on WebView to render UI.</td>
+            </tr>
+            <tr>
+              <th scope="row">Code Maintenance</th>
+              <td>NOT EASY. <br><br> Since React Native supports third-part-libraries, the use of them can cause compatibility issues that are hard to debug.</td>
+              <td>QUITE EASY <br><br> Flutter offers simple straightforward code structure and offers external debugging tools.</td>
+              <td>NOT EASY <br><br> Because PhoneGap relies on webview, limitations and bugs can become frequent and troubleshooting requires familiarity with web tools.</td>
+            </tr>
+    
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+        
+    </main>
+    
+    
+</body>
+    <script src="./app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</html>
