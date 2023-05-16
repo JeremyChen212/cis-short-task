@@ -18,10 +18,10 @@ body {
 th {
     background-color: #f7f9fcfd;
 }
-#toprow th {
+body #toprow th {
     position: sticky;
-    top: 0; /* Don't forget this, required for the stickiness */
-    box-shadow: 0 0.5px 1px -1px #0000002d;
+    top: 0; 
+    box-shadow: 0 0.5px 1px -1px #00000079;
   }
 #colorSelect {
     width: fit-content;
@@ -34,4 +34,14 @@ a {
 }
 body a:hover {
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    tbody th {
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right; 
+    }
+    #firstcol {
+        width: 3rem;
+    }
 }
