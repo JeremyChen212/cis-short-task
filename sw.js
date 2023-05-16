@@ -1,10 +1,9 @@
-var CACHE_VERSION = 'hw4';
+var CACHE_VERSION = 'short-task';
 var CACHE_FILES = [
     '/table.html',
     '/overview.html',
     '/app.js',
-    '/style.css',
-    'manifest.json'
+    '/style.css'
 ];
 
 self.addEventListener('install', event => {
